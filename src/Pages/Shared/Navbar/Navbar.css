@@ -1,0 +1,18 @@
+.custom-nav-item a {
+    padding: 0 !important;
+}
+
+/* navbar styles  */
+
+.active {
+    @apply font-extrabold tracking-wide text-[#EEFF25] bg-transparent text-xl px-2
+}
+
+.default {
+    @apply font-extrabold tracking-wide text-white bg-transparent text-xl px-2
+}
+
+.menu :where(li:not(.menu-title):not(:empty))> :where(:not(ul).active),
+.menu :where(li:not(.menu-title):not(:empty))> :where(*:not(ul):active) {
+    background-color: transparent !important;
+}
